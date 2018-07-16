@@ -19,9 +19,6 @@ def get_podcast_file_url(pocketcasts_custom_url):
 def download_podcast(url):
     urllib.request.urlretrieve(url, file_name)
 
-def download_podcast(url):
-    urllib.request.urlretrieve(url, file_name)
-
 def get_clip(startTime,endTime,cntr):
     clip = AudioSegment.from_mp3(os.path.join(os.getcwd(), file_name))
     extract = clip[startTime:endTime]
